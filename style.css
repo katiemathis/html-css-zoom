@@ -7,6 +7,8 @@
 }
 
 header {
+    display: flex;
+    flex-direction: row-reverse;
     background-color: black;
     height: 60px; 
     width: 100%;
@@ -17,10 +19,33 @@ header {
     z-index: 999;
 }
 
+ul {
+    display: flex;
+    flex-direction: row-reverse;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+li, p {
+    color: white;
+    background-color: grey;
+    font-size: 12px;
+}
+
+.top-menu {
+    border-radius: 5px;
+    line-height: 20px;
+    vertical-align: center;
+    width: ;
+    padding: 3%;
+}
+
 main {
     margin-left: auto;
     margin-right: auto;
     Margin-top: 60px;
+    margin-bottom: 70px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -49,13 +74,9 @@ i {
 }
 
 .name {
-    background-color: grey;
-    line-height: 20px;
-    color: white;
     position: absolute;
     left: 0;
     bottom: 4px;
-    font-size: 12px;
     padding: 1.5%;
 
 }
