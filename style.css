@@ -10,7 +10,20 @@ header {
 }
 
 .tile {
-    box-sizing: flex;
+    margin: auto;
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-basis: 100vw;
+    width: 90vw;
+}
+
+img {
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 0.5%;
+    min-width: 20%;
+    max-width: 30%;
 }
