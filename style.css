@@ -2,15 +2,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: black;
 }
 
 header {
     background-color: black;
-    min-height: 70px;
+    height: 60px; 
+    width: 100%;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
 }
 
-.tile {
-    margin: auto;
+main {
+    margin-left: auto;
+    margin-right: auto;
+    Margin-top: 60px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -20,10 +30,42 @@ header {
     width: 90vw;
 }
 
-img {
+.tile {
     flex-grow: 1;
     flex-shrink: 1;
-    margin: 0.5%;
-    min-width: 20%;
-    max-width: 30%;
+    min-width: 202px;
+    min-height: 127px;
+    position: relative;
+}
+
+img {
+    width: 200px;
+    height: 125px;
+    margin: auto;
+}
+
+i {
+    background-color: grey;
+}
+
+.name {
+    background-color: grey;
+    line-height: 20px;
+    color: white;
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    font-size: 12px;
+    padding: 1.5%;
+
+}
+
+footer {
+    min-height: 70px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
 }
