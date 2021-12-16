@@ -19,9 +19,11 @@ header {
     z-index: 999;
 }
 
+
 a {
     text-decoration: none;
     color: white;
+    opacity: .8;
 }
 
 #top-menu {
@@ -63,14 +65,14 @@ main {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    flex-basis: 100vw;
-    width: 90vw;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .tile {
-    flex-grow: 1;
-    flex-shrink: 1;
+    flex-grow: 0;
+    flex-shrink: 0;
     min-width: 202px;
     min-height: 127px;
     position: relative;
@@ -80,6 +82,7 @@ img {
     width: 200px;
     height: 125px;
     margin: auto;
+    object-fit: cover;
 }
 
 .fa-microphone-slash {
@@ -93,13 +96,14 @@ img {
     bottom: 4px;
     padding: 1.5%;
     background-color: grey;
+    opacity: .8;
     font-size: 12px;
     color: white;
 
 }
 
 footer {
-    min-height: 70px;
+    height: 70px;
     width: 100%;
     background-color: #252424;
     position: fixed;
@@ -107,21 +111,77 @@ footer {
     bottom: 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
 }
 
 .left-col {
+    display: flex;
     color: white;
-    font-size: 12px;
     background-color: #252424;
+    align-items: center;
+    font-size: 12px;
+    margin-left: 20px;
+    height: 100%;
 }
 
 .bottom-menu-icon {
-    height: 50px;
-    width: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: #252424;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-.bottom-menu-icon i {
-    width: 50%;
-    height: 50%;
-}  
+.fa-microphone {
+ font-size: 30px;
+
 }
+
+.arrow {
+    background-color: #252424;
+    align-self: center;
+    margin: 10%;
+    padding: 10%;
+}
+
+.fa-microphone, .text  {
+    margin: 3% 10%;
+    padding: 3% 10%;
+    background-color: #252424;
+}  
+
+.center-col {
+    display: flex;
+    color: white;
+    background-color: #252424;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-size: 12px;
+    height: 100%;
+}
+
+.right-col {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 70px;
+    background-color: grey;
+
+}
+
+.end {
+    background-color: grey;
+    color: red;
+    text-align: center;
+    font-size: 12px;
+    white-space: nowrap;
+    padding: 0;
+    margin: 0;
+}
+
+
+
