@@ -124,6 +124,7 @@ footer {
     font-size: 12px;
     margin-left: 20px;
     height: 100%;
+
 }
 
 .bottom-menu-icon {
@@ -146,11 +147,11 @@ footer {
     padding: 10%;
 }
 
-.fa-microphone, .text  {
+/*.fa-microphone, .text  {
     margin: 3% 10%;
     padding: 3% 10%;
     background-color: #252424;
-}  
+} */
 
 .center-col {
     display: flex;
